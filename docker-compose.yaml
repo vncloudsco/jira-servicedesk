@@ -13,7 +13,7 @@ services:
     volumes:
       - jira_servicedesk_data:/var/jira
       - jira_servicedesk_core:/opt/jira
-      - dbconfig.xml:/var/atlassian/application-data/jira/dbconfig.xml
+      - ./dbconfig.xml:/var/atlassian/application-data/jira/dbconfig.xml
     restart: always
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080"]
