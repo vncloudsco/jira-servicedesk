@@ -9,7 +9,7 @@ services:
     depends_on:
       - jira_servicedesk
     ports:
-      - "8080:8080"
+      - "9090:8080"
     volumes:
       - jira_servicedesk_data:/var/jira
       - jira_servicedesk_core:/opt/jira
