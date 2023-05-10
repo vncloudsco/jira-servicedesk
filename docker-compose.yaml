@@ -1,9 +1,7 @@
 version: '3.4'
 services:
   jira:
-    build:
-      dockerfile: Dockerfile
-    container_name: jira-servicedesk-srv
+    image: vouu/jira-servicedesk:build-05-10-2023
     environment:
       - TZ='Asia/Ho_Chi_Minh'
     depends_on:
